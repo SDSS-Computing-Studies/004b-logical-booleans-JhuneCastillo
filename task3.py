@@ -15,3 +15,12 @@ example:
 Enter a number: -3
 -3 is not a positive integer
 """
+import math
+
+x = (input("Enter a number of any type: "))
+y = "-"
+
+if y in x:
+    print(x + " " + "is not a positive integer")
+else:
+    print(x + " " + "is a positive integer")
