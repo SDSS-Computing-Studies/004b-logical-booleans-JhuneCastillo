@@ -19,3 +19,7 @@ Enter a number: 48
 """
 
 #! python3
+
+x = int(input("Enter a number: "))
+
+
