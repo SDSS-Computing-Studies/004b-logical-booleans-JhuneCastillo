@@ -26,3 +26,25 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+x = int(input("Enter an integer: "))
+y = int(input("Enter a second integer: "))
+z = int(input("Enter a third integer: "))
+
+list1 = [x, y, z]
+if x == min(list1) and z == max(list1):
+    middle = y
+elif z == min(list1) and x == max(list1):
+    middle = y
+elif y == min(list1) and z == max(list1):
+    middle = x
+elif z == min(list1) and y == max(list1):
+    middle = x
+elif x == min(list1) and y == max(list1):
+    middle = z
+elif y == min(list1) and x == max(list1):
+    middle = z
+
+if min(list1)**2 + middle**2 == max(list1)**2:
+    print(str(min(list1)) + "," + str(middle) + "," + str(max(list1)) + " form a Pythagorean triple")
+else:
+    print(str(min(list1)) + "," + str(middle) + "," + str(max(list1)) + " do not form a Pythagorean triple")

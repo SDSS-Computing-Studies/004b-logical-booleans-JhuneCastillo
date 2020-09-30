@@ -17,5 +17,14 @@ example:
 Enter a number: 48
 48 is frue.
 """
+import math
 
 #! python3
+
+x = int(input("Enter a number: "))
+y = str(x)
+
+if x % 8 == 0 and x % 6 == 0:
+    print (y + " " + "is a frue")
+else:
+    print (y + " " + "is not a frue")
