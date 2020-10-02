@@ -28,7 +28,7 @@ a = str(x)
 if int(y + 0.5 ) ** 2 == x and int(x) ** 1/3 == z:  
     print(a + " is both a perfect square and a perfect cube")
 elif int(y + 0.5) ** 2 == x:
-    print(a + " only a perfect square")
+    print(a + " is only a perfect square")
 elif int(x) ** 1/3 == z:
-    print(a + " only a perfect cube")
+    print(a + " is only a perfect cube")
     
