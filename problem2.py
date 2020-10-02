@@ -23,13 +23,10 @@ Enter a number: 4
 Enter another number: 25
 4 is not a factor of 25
 """
-x = int(input("Enter an integer: "))
-y = int(input("Enter an integer: "))
+int_1 = int(input("Enter a number: "))
+int_2 = int(input("Enter another number: "))
 
-a = str(x)
-b = str(y)
-
-if x>y or y<x:
-    print(a + " is a factor of " + b)
+if max(int_1, int_2) % min(int_1, int_2) == 0:
+    print(str(min(int_1, int_2)) + " is a factor of " + str(max(int_1, int_2)))
 else:
-    print(a + " is not a factor of " + b)
+    print(str(min(int_1, int_2)) + " is not a factor of " + str(max(int_1, int_2)))
