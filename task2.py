@@ -29,6 +29,6 @@ if int(y + 0.5 ) ** 2 == x and int(x) ** 1/3 == z:
     print(a + " is both a perfect square and a perfect cube.")
 elif int(y + 0.5) ** 2 == x:
     print(a + " is only a perfect square.")
-elif int(x) ** 1/3 == z:
+elif (x) ** 1/3 == z:
     print(a + " is only a perfect cube.")
     
