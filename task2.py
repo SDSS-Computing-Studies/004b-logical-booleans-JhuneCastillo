@@ -20,15 +20,13 @@ Enter a number: 8
 """
 import math
 
-x = int(input ("Enter a number: "))
-y = math.sqrt(x)
-z = x ** 1/3
-a = str(x)
+a = int(input("Enter a number: "))
+b = math.sqrt(a)
+c = a ** 1/3
 
-if int(y + 0.5 ) ** 2 == x and x ** 1/3 == z:  
-    print(a + " is both a perfect square and a perfect cube.")
-elif int(y + 0.5) ** 2 == x:
-    print(a + " is only a perfect square.")
-elif x ** 1/3 == z:
-    print(a + " is only a perfect cube.")
-    
+if int(b + 0.5) ** 2 == a and a ** 1/3 == c:
+    print(str(a) + " is both a perfect square and a perfect cube.")
+elif int(b + 0.5) ** 2 == a:
+    print(str(a) + " is only a perfect square.")
+elif a ** 1/3 == c:
+    print(str(a) + " is only a perfect cube.")
