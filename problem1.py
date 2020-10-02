@@ -20,6 +20,12 @@ Enter a number: 48
 
 #! python3
 
-x = int(input("Enter a number: "))
+inputnumber = input("Enter a number: ")
+a = int(inputnumber)
+
+if a % 8 == 0:
+    print(inputnumber + " is not frue.")
+elif a % 6 == 0:
+    print(inputnumber + " is frue.")
 
 
